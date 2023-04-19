@@ -63,5 +63,7 @@ class BaseModel:
                     res[key] = value.isoformat()
                 else:
                     res[key] = value
+        if res.get('_sa_instance_state'):
+            del res['_sa_instance_state']
         res['__class__'] = self.__class__.__name__
         return res
