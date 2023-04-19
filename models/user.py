@@ -29,4 +29,3 @@ class User(BaseModel, Base):
         backref="user",
         cascade="all, delete-orphan"
     )
-
