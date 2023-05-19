@@ -67,4 +67,3 @@ class FileStorage:
     def close(self):
         """Closes the storage engine."""
         self.reload()
-        
